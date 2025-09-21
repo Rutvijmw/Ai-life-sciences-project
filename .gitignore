@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+.env
+env/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+
+# Data
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
+
+# VSCode / OS
+.vscode/
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Jupyter
+.notebook_cache/
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+
+# Data files (don’t push big/raw/generated data to GitHub)
+data/raw/*
+data/processed/*
+
+# Streamlit session state
+.streamlit/
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+
+# Data files (don’t push big/raw/generated data to GitHub)
+data/raw/*
+data/processed/*
+
+# Streamlit session state
+.streamlit/

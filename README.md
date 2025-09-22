@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)  
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-brightgreen)](https://streamlit.io/)  
-[![Tests](https://img.shields.io/github/actions/workflow/status/USER/REPO/ci.yml?label=tests)]()
+[![Tests](https://github.com/Rutvijmw/Ai-life-sciences-project/actions/workflows/ci.yml/badge.svg)](https://github.com/Rutvijmw/Ai-life-sciences-project/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 
 End-to-end portfolio project designed to match a **Data Scientist (Life Sciences, Scientific AI)** role.  

@@ -20,5 +20,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Option 1: generate synthetic data + run pipeline
+      - name: Run pipeline (generate data)
+        run: |
+          python -m scripts.generate_data
+          python -m scripts.train_survival
+          python -m scripts.run_bayesian
+          python -m scripts.build_kg
+
+      # Run tests with project root on path
       - name: Run tests
         run: PYTHONPATH=. pytest -q

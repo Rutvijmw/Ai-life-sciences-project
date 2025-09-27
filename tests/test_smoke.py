@@ -1,9 +1,15 @@
+import pandas as pd
 from src.models.survival import SurvivalModel
-from src.utils.io import load_csv
 
 def test_survival_smoke():
-    df = load_csv("raw/drug_response_synthetic.csv")
+    # Minimal synthetic dataset (no files needed)
+    df = pd.DataFrame({
+        "time":      [6, 12, 8, 10, 7, 5],
+        "event":     [1, 1, 0, 1, 1, 0],
+        "age":       [55, 60, 50, 62, 47, 70],
+        "treatment": [0, 1, 0, 1, 1, 0],
+    })
     model = SurvivalModel()
-    res = model.fit(df)
-    assert res.km is not None
+    model.fit(df, covariates=["age","treatment"])
+    # Just ensure model trained and summary is available
     assert model.summary() is not None

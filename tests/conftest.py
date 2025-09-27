@@ -1,3 +1,5 @@
 import sys, os
-# Add project root (one level up from tests/) so `import src` works in CI and locally
+
+# Ensure project root is in PYTHONPATH so pytest can import src
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+

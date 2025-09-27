@@ -19,7 +19,7 @@ It demonstrates **survival analysis, Bayesian modeling, transformers for literat
 - 🎛️ Streamlit dashboard for non-technical stakeholders  
 - ⚙️ CI-ready GitHub Actions workflow  
 
-> Swap in real datasets later (TCGA, ChEMBL, DrugBank, PubMed). This scaffold runs with synthetic data so you can demo immediately.
+
 
 ---
 
